@@ -12,6 +12,7 @@
 		385B1B34214F03DA00DCF6B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385B1B32214F03DA00DCF6B7 /* Main.storyboard */; };
 		385B1B36214F03DA00DCF6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385B1B35214F03DA00DCF6B7 /* Assets.xcassets */; };
 		385B1B39214F03DA00DCF6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385B1B37214F03DA00DCF6B7 /* LaunchScreen.storyboard */; };
+		4CC0301A6AF5D8201FF866EB /* Pods_Turnos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FDB116722C0908AEA5C965 /* Pods_Turnos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		385B1B35214F03DA00DCF6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385B1B38214F03DA00DCF6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385B1B3A214F03DA00DCF6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B9DA5090AA23138407DDF6C /* Pods-Turnos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Turnos/Pods-Turnos.debug.xcconfig"; sourceTree = "<group>"; };
+		A691E8AFE1FAED86F95B8F85 /* Pods-Turnos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Turnos/Pods-Turnos.release.xcconfig"; sourceTree = "<group>"; };
+		D7FDB116722C0908AEA5C965 /* Pods_Turnos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turnos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC0301A6AF5D8201FF866EB /* Pods_Turnos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A82BE62ACE5954CEFE62E64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7FDB116722C0908AEA5C965 /* Pods_Turnos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D8B527F9B75B4694C82A08F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B9DA5090AA23138407DDF6C /* Pods-Turnos.debug.xcconfig */,
+				A691E8AFE1FAED86F95B8F85 /* Pods-Turnos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		385B1B22214F03D900DCF6B7 = {
 			isa = PBXGroup;
 			children = (
 				385B1B2D214F03DA00DCF6B7 /* Turnos */,
 				385B1B2C214F03D900DCF6B7 /* Products */,
+				2D8B527F9B75B4694C82A08F /* Pods */,
+				1A82BE62ACE5954CEFE62E64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 385B1B3D214F03DA00DCF6B7 /* Build configuration list for PBXNativeTarget "Turnos" */;
 			buildPhases = (
+				501677CAB1DD4A3AB5EEC992 /* [CP] Check Pods Manifest.lock */,
 				385B1B27214F03D900DCF6B7 /* Sources */,
 				385B1B28214F03D900DCF6B7 /* Frameworks */,
 				385B1B29214F03D900DCF6B7 /* Resources */,
+				015CBA8F8B78DF176DE07164 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		015CBA8F8B78DF176DE07164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Turnos/Pods-Turnos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Turnos/Pods-Turnos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		501677CAB1DD4A3AB5EEC992 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Turnos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		385B1B27214F03D900DCF6B7 /* Sources */ = {
@@ -278,6 +343,7 @@
 		};
 		385B1B3E214F03DA00DCF6B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9DA5090AA23138407DDF6C /* Pods-Turnos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +362,7 @@
 		};
 		385B1B3F214F03DA00DCF6B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A691E8AFE1FAED86F95B8F85 /* Pods-Turnos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
