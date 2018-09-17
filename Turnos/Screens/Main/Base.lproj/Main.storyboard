@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bku-hK-wiN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--usuario-->
+        <scene sceneID="7iR-LN-Op8">
+            <objects>
+                <viewController id="Lsh-U0-vYB" customClass="MainViewController" customModule="Turnos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jwr-JY-NT9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHr-oc-aop">
+                                <rect key="frame" x="19" y="345.5" width="337.5" height="40"/>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.31764705879999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XYJ-zE-8QK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Registrar Turno">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerTurn:" destination="Lsh-U0-vYB" eventType="touchUpInside" id="WSg-43-h3P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ws-Iu-lnG">
+                                <rect key="frame" x="64" y="425.5" width="247" height="60"/>
+                                <string key="text">Turnos en curso:
+...</string>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IHr-oc-aop" firstAttribute="centerX" secondItem="duh-gj-h7E" secondAttribute="centerX" id="AeD-fi-Tgy"/>
+                            <constraint firstItem="0ws-Iu-lnG" firstAttribute="centerX" secondItem="duh-gj-h7E" secondAttribute="centerX" id="BD1-1i-UDY"/>
+                            <constraint firstItem="0ws-Iu-lnG" firstAttribute="top" secondItem="IHr-oc-aop" secondAttribute="bottom" constant="40" id="Mvl-9Z-pOn"/>
+                            <constraint firstItem="IHr-oc-aop" firstAttribute="width" secondItem="jwr-JY-NT9" secondAttribute="width" multiplier="0.9" id="nfp-Wh-fLI"/>
+                            <constraint firstItem="IHr-oc-aop" firstAttribute="centerY" secondItem="duh-gj-h7E" secondAttribute="centerY" id="p3L-vx-y2n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="duh-gj-h7E"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="usuario" id="fS0-Z0-51i">
+                        <barButtonItem key="rightBarButtonItem" title="Salir" id="5jq-fh-qt7">
+                            <connections>
+                                <action selector="logout:" destination="Lsh-U0-vYB" id="yvy-lY-lfl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="l6g-W7-P1s" kind="show" identifier="turn" id="lgx-Cq-pwf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8NH-Pr-EjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="1076.311844077961"/>
+        </scene>
+        <!--Espere su turno-->
+        <scene sceneID="CWa-HN-iDC">
+            <objects>
+                <viewController id="l6g-W7-P1s" customClass="TurnViewController" customModule="Turnos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqZ-er-1Qt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turno en curso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXF-DS-9Zp">
+                                <rect key="frame" x="77.5" y="350.5" width="221.5" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="turno" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-cd-1sl">
+                                <rect key="frame" x="156" y="410.5" width="64" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lbl-cd-1sl" firstAttribute="top" secondItem="LXF-DS-9Zp" secondAttribute="bottom" constant="30" id="FbX-IK-Z8w"/>
+                            <constraint firstItem="lbl-cd-1sl" firstAttribute="centerX" secondItem="CY0-zQ-Xor" secondAttribute="centerX" id="Zqm-B2-o0x"/>
+                            <constraint firstItem="LXF-DS-9Zp" firstAttribute="centerY" secondItem="CY0-zQ-Xor" secondAttribute="centerY" id="n3L-nN-Gaq"/>
+                            <constraint firstItem="LXF-DS-9Zp" firstAttribute="centerX" secondItem="CY0-zQ-Xor" secondAttribute="centerX" id="w0S-vB-f4U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CY0-zQ-Xor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Espere su turno" id="OgQ-gm-FCP"/>
+                    <connections>
+                        <outlet property="turn" destination="lbl-cd-1sl" id="j4s-u0-Tcw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egx-cV-d0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2772" y="1075.4122938530736"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fRp-jU-Dq3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bku-hK-wiN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4uR-OW-gmu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lsh-U0-vYB" kind="relationship" relationship="rootViewController" id="N6w-8e-2aQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oh6-hJ-3Ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="1076.311844077961"/>
+        </scene>
+    </scenes>
+</document>

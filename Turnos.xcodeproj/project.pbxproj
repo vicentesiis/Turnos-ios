@@ -7,22 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384CB93B214F1AA8008D69F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384CB93A214F1AA8008D69F2 /* Login.storyboard */; };
+		384CB93D214F1B27008D69F2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384CB93C214F1B27008D69F2 /* SignUpViewController.swift */; };
+		384CB941214F1DC5008D69F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384CB940214F1DC5008D69F2 /* MainViewController.swift */; };
+		384CB947214F25CA008D69F2 /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384CB946214F25CA008D69F2 /* RestApi.swift */; };
 		385B1B2F214F03DA00DCF6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B1B2E214F03DA00DCF6B7 /* AppDelegate.swift */; };
-		385B1B31214F03DA00DCF6B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B1B30214F03DA00DCF6B7 /* ViewController.swift */; };
+		385B1B31214F03DA00DCF6B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B1B30214F03DA00DCF6B7 /* LoginViewController.swift */; };
 		385B1B34214F03DA00DCF6B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385B1B32214F03DA00DCF6B7 /* Main.storyboard */; };
 		385B1B36214F03DA00DCF6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385B1B35214F03DA00DCF6B7 /* Assets.xcassets */; };
 		385B1B39214F03DA00DCF6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385B1B37214F03DA00DCF6B7 /* LaunchScreen.storyboard */; };
+		38DE1E19214F2DBB0069A8E3 /* Turno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE1E18214F2DBA0069A8E3 /* Turno.swift */; };
+		38EA7603214F3272002292E1 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EA7602214F3272002292E1 /* Util.swift */; };
+		38EA7605214F3686002292E1 /* TurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EA7604214F3686002292E1 /* TurnViewController.swift */; };
+		38EA7607214F3703002292E1 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EA7606214F3703002292E1 /* Protocols.swift */; };
 		4CC0301A6AF5D8201FF866EB /* Pods_Turnos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FDB116722C0908AEA5C965 /* Pods_Turnos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		384CB93A214F1AA8008D69F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		384CB93C214F1B27008D69F2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		384CB940214F1DC5008D69F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		384CB946214F25CA008D69F2 /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
 		385B1B2B214F03D900DCF6B7 /* Turnos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turnos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385B1B2E214F03DA00DCF6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		385B1B30214F03DA00DCF6B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		385B1B30214F03DA00DCF6B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		385B1B33214F03DA00DCF6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		385B1B35214F03DA00DCF6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385B1B38214F03DA00DCF6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385B1B3A214F03DA00DCF6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38DE1E18214F2DBA0069A8E3 /* Turno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turno.swift; sourceTree = "<group>"; };
+		38EA7602214F3272002292E1 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		38EA7604214F3686002292E1 /* TurnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnViewController.swift; sourceTree = "<group>"; };
+		38EA7606214F3703002292E1 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		8B9DA5090AA23138407DDF6C /* Pods-Turnos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Turnos/Pods-Turnos.debug.xcconfig"; sourceTree = "<group>"; };
 		A691E8AFE1FAED86F95B8F85 /* Pods-Turnos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Turnos/Pods-Turnos.release.xcconfig"; sourceTree = "<group>"; };
 		D7FDB116722C0908AEA5C965 /* Pods_Turnos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turnos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +73,53 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		384CB938214F1A41008D69F2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				384CB93F214F1DAB008D69F2 /* LaunchSreen */,
+				384CB93E214F1DA5008D69F2 /* Main */,
+				384CB939214F1A56008D69F2 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		384CB939214F1A56008D69F2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				384CB93A214F1AA8008D69F2 /* Login.storyboard */,
+				385B1B30214F03DA00DCF6B7 /* LoginViewController.swift */,
+				384CB93C214F1B27008D69F2 /* SignUpViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		384CB93E214F1DA5008D69F2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				385B1B32214F03DA00DCF6B7 /* Main.storyboard */,
+				384CB940214F1DC5008D69F2 /* MainViewController.swift */,
+				38EA7604214F3686002292E1 /* TurnViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		384CB93F214F1DAB008D69F2 /* LaunchSreen */ = {
+			isa = PBXGroup;
+			children = (
+				385B1B37214F03DA00DCF6B7 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchSreen;
+			sourceTree = "<group>";
+		};
+		384CB945214F25B2008D69F2 /* RestApi */ = {
+			isa = PBXGroup;
+			children = (
+				384CB946214F25CA008D69F2 /* RestApi.swift */,
+				38DE1E18214F2DBA0069A8E3 /* Turno.swift */,
+			);
+			path = RestApi;
+			sourceTree = "<group>";
+		};
 		385B1B22214F03D900DCF6B7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,14 +141,23 @@
 		385B1B2D214F03DA00DCF6B7 /* Turnos */ = {
 			isa = PBXGroup;
 			children = (
+				384CB945214F25B2008D69F2 /* RestApi */,
+				384CB938214F1A41008D69F2 /* Screens */,
+				38EA7601214F3263002292E1 /* Utils */,
 				385B1B2E214F03DA00DCF6B7 /* AppDelegate.swift */,
-				385B1B30214F03DA00DCF6B7 /* ViewController.swift */,
-				385B1B32214F03DA00DCF6B7 /* Main.storyboard */,
 				385B1B35214F03DA00DCF6B7 /* Assets.xcassets */,
-				385B1B37214F03DA00DCF6B7 /* LaunchScreen.storyboard */,
 				385B1B3A214F03DA00DCF6B7 /* Info.plist */,
 			);
 			path = Turnos;
+			sourceTree = "<group>";
+		};
+		38EA7601214F3263002292E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				38EA7602214F3272002292E1 /* Util.swift */,
+				38EA7606214F3703002292E1 /* Protocols.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384CB93B214F1AA8008D69F2 /* Login.storyboard in Resources */,
 				385B1B39214F03DA00DCF6B7 /* LaunchScreen.storyboard in Resources */,
 				385B1B36214F03DA00DCF6B7 /* Assets.xcassets in Resources */,
 				385B1B34214F03DA00DCF6B7 /* Main.storyboard in Resources */,
@@ -165,10 +238,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Turnos/Pods-Turnos-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -200,8 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385B1B31214F03DA00DCF6B7 /* ViewController.swift in Sources */,
+				384CB947214F25CA008D69F2 /* RestApi.swift in Sources */,
+				384CB93D214F1B27008D69F2 /* SignUpViewController.swift in Sources */,
+				385B1B31214F03DA00DCF6B7 /* LoginViewController.swift in Sources */,
+				38EA7607214F3703002292E1 /* Protocols.swift in Sources */,
+				38EA7605214F3686002292E1 /* TurnViewController.swift in Sources */,
 				385B1B2F214F03DA00DCF6B7 /* AppDelegate.swift in Sources */,
+				38EA7603214F3272002292E1 /* Util.swift in Sources */,
+				38DE1E19214F2DBB0069A8E3 /* Turno.swift in Sources */,
+				384CB941214F1DC5008D69F2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

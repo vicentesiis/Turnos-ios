@@ -7,6 +7,8 @@ target 'Turnos' do
 
   # Pods for Turnos
   pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+  pod 'KeychainSwift'
 end
 
 
